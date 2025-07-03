@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rakesh.com</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="nav-main">
+      <div class="nav-logo">
+        <a href="#home"><i class="fa-solid fa-laptop-code"></i> Rakesh</a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul class="nav-container">
+        <li>
+          <a href="#home"><i class="fa-solid fa-house"></i>Home</a>
+        </li>
+        <li>
+          <a href="#about"><i class="fa-solid fa-user"></i>About</a>
+        </li>
+        <li>
+          <a href="#skills"><i class="fa-solid fa-code"></i>Skills</a>
+        </li>
+        <li>
+          <a href="#projects"><i class="fa-solid fa-diagram-project"></i>Projects</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fa-solid fa-envelope"></i>Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- home section -->
+
+    <div id="home" class="home-container" data-aos="fade-up">
+      <div class="intro-container">
+        <h2>Hi, <br />I'm <span>Katravath Rakesh</span></h2>
+        <p>A passionate Web Developer from India</p>
+        <a href="#contact" class="btn">Enlist me</a>
+        <a href="#certificates" class="btn2">Certificates</a>
+        <a href="Rakesh Resume.pdf" download class="resume-btn">
+          <i class="fas fa-download"></i> Resume
+        </a>
+      </div>
+      <div class="my-img">
+        <img src="images/rakesh2(img).jpg" alt="img" />
+      </div>
+    </div>
+
+    <!-- about section -->
+
+    <section class="about-container" id="about" data-aos="fade-up">
+      <div class="about-img">
+        <img src="images/my_img-removebg-preview.png" alt="aboutimg" />
+      </div>
+      <div class="about-detail">
+        <h2 id="aboutme">About Me</h2>
+        <p id="para-me">
+          I'm Katravath Rakesh, a passionate Full-Stack MERN Developer from
+          India with strong skills in Data Structures and Algorithms. I work
+          with technologies like JavaScript, React, Node.js, Express, MongoDB,
+          Git, and more. I enjoy solving coding problems and building efficient
+          web apps.
+        </p>
+        <div class="about-buttons">
+          <button onclick="showEducation(this)">Education</button>
+          <button onclick="openLeetCode(this)">LeetCode</button>
+          <button onclick="showSocial(this)">Social Media</button>
+        </div>
+        <div id="about-info" class="about-info"></div>
+      </div>
+    </section>
+
+    <!-- skills -->
+
+    <section id="skills" class="skills-container" data-aos="fade-up"  >
+      <h2 class="skill-heading">🛠️ Skills & Experience</h2>
+      <div class="skills-row">
+        <div class="skill-category programming-skills">
+          <h3>💻 Programming</h3>
+          <ul class="skill-list">
+            <li title="C Programming">
+              <i class="devicon-c-plain colored"></i>
+              <span>C</span>
+            </li>
+            <li title="Java Programming">
+              <i class="devicon-java-plain colored"></i>
+              <span>Java</span>
+            </li>
+            <li title="Python Programming">
+              <i class="devicon-python-plain colored"></i>
+              <span>Python</span>
+            </li>
+            <li title="Data Structures & Algorithms">
+              <i class="devicon-codepen-plain colored"></i>
+              <span>DSA</span>
+            </li>
+          </ul>
+        </div>
+        <div class="skill-category technologies-skills">
+          <h3>🛠️ Technology & Tools</h3>
+          <ul class="skill-list">
+            <li title="HTML5">
+              <i class="devicon-html5-plain colored"></i>
+              <span>HTML5</span>
+            </li>
+            <li title="CSS3">
+              <i class="devicon-css3-plain colored"></i>
+              <span>CSS3</span>
+            </li>
+            <li title="JavaScript">
+              <i class="devicon-javascript-plain colored"></i>
+              <span>JavaScript</span>
+            </li>
+            <li title="React.js">
+              <i class="devicon-react-original colored"></i>
+              <span>React</span>
+            </li>
+            <li title="Node.js">
+              <i class="devicon-nodejs-plain colored"></i>
+              <span>Node.js</span>
+            </li>
+            <li title="Express.js">
+              <i class="devicon-express-original"></i>
+              <span>Express</span>
+            </li>
+            <li title="MongoDB">
+              <i class="devicon-mongodb-plain colored"></i>
+              <span>MongoDB</span>
+            </li>
+          </ul>
+        </div>
+        <div class="skill-category soft-skills">
+          <h3>💡 Soft Skills</h3>
+          <ul class="skill-list">
+            <li title="Problem Solving"><i class="fas fa-lightbulb"></i>Problem Solving</li>
+            <li title="Team Collaboration"><i class="fas fa-users"></i>Team Collaboration</li>
+            <li title="Time Management"><i class="fas fa-clock"></i>Time Management</li>
+            <li title="Communication"><i class="fas fa-comments"></i>Communication</li>
+            <li title="Adaptability"><i class="fas fa-sync-alt"></i>Adaptability</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- project section -->
+
+
+    <section id="projects" class="projects-container" data-aos="fade-up" >
+      <h2 class="section-heading">🚀 My Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="images/project1.png" alt="portfolio">
+          <h3>Portfolio Website</h3>
+          <p>A responsive personal portfolio built with HTML , CSS , AND JavaScript.</p>
+          <div class="project-links">
+              <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/project3.png" alt="todo app">
+          <h3>Todo App</h3>
+          <p>A MERN stack app to manage daily tasks with login/auth features.</p>
+          <div class="project-links">
+              <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/project2.png" alt="Sportify">
+          <h3>Spotify Clone</h3>
+          <p>A basic clone of Spotify built using HTML, CSS, and JavaScript with audio playback features.</p>
+          <div class="project-links">
+              <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/project4.png" alt="Food App " />
+          <h3>Food Order & Delivery</h3>
+          <p>A full-stack food ordering app with login, cart, and delivery status features using Python stack.</p>
+          <div class="project-links">
+              <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <img src="images/project5.png" alt="Weather App " />
+          <h3>Real Time Weather Prediction</h3>
+          <p>A responsive web app that shows live weather data using the OpenWeatherMap API. Users can search any city and view current conditions, temperature, humidity, and wind speed.</p>
+          <div class="project-links">
+              <a href="#"><i class="fa-brands fa-github"></i> Code</a>
+              <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Certificate Section -->
+
+
+    <!-- Certificates Section -->
+<section id="certificates" class="certificate-section" data-aos="fade-up">
+  <h2 class="certificate-heading">🎓 Certificates</h2>
+  <div class="certificate-grid">
+
+    <div class="certificate-card" onclick="openModal('images/java.png')">
+      <div class="img-wrapper">
+        <img src="images/java.png" alt="Java Certificate">
+      </div>
+      <div class="cert-info">
+        <h3>Java Programming</h3>
+        <p>Coursera | July 2025</p>
+      </div>
+    </div>
+
+    <div class="certificate-card" onclick="openModal('images/IBM.png')">
+      <div class="img-wrapper">
+        <img src="images/IBM.png" alt="IBM Certificate">
+      </div>
+      <div class="cert-info">
+        <h3>FrontEnd Development</h3>
+        <p>IBM | August 2024</p>
+      </div>
+    </div>
+
+    <div class="certificate-card" onclick="openModal('images/SI.png')">
+      <div class="img-wrapper">
+        <img src="images/SI.png" alt="DSA Certificate">
+      </div>
+      <div class="cert-info">
+        <h3>Data Structures & Algorithms</h3>
+        <p>SmartInterview | may 2025</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Modal for Enlarged View -->
+<div id="modal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modal-img">
+</div>
+
+<!-- contact section -->
+
+  <section id="contact" class="contact-section" data-aos="fade-up">
+    <h2>📬 Contact Me</h2>
+
+    <!-- Contact Icons -->
+
+    <div class="contact-icons">
+      <a href="https://wa.me/919676336834" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp" />
+      </a>
+      <a href="mailto:katravathrakesh44@gmail.com" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png" alt="Email" />
+      </a>
+      <a href="https://www.linkedin.com/in/katravath-rakesh-6b75712a5/" target="_blank">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" alt="LinkedIn" />
+      </a>
+    </div>
+
+      <!-- Contact Form -->
+
+      <form id="contactForm" class="contact-form" action="https://formspree.io/f/meokdewb" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <p id="formMessage" class="form-message"></p>
+    </section>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+
+
+    
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
