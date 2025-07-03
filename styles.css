@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -598,7 +599,6 @@ body {
 .project-card p {
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 3; /* Max 3 lines */
   -webkit-box-orient: vertical;
 }
 
@@ -803,5 +803,38 @@ img {
   margin-right: 10px;
 }
 
+/* Add this if it's missing or incomplete */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 1000;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
 
+/* The close button */
+.modal .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
+/* The modal image */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
